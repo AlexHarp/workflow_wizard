@@ -1,0 +1,7 @@
+name: 'Workflow Wizard'
+type: module
+description: Creates a form in field management that lets you add mappings to the various standards transformations for each field. Also adds a label that can be added before the input field for each field.
+version: '8.x-1.x-dev'
+core: '8.x'
+package: Geoscience Australia
+datestamp: 1508973119 
