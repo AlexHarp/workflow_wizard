@@ -1,1 +1,27 @@
 <?php
+ 
+use Drupal\Component\Utility\Html;
+ 
+/**
+ * Helper function to get basic user details.
+ *
+ * @return array
+ */
+function workflow_wizard_get_user_details() {
+  $details = [
+    'name' => '',
+    'mail' => '',
+    'phone' => '',
+  ];
+ 
+  $account = \Drupal::currentUser();
+  if ($account->id() > 0) {
+    $details['name'] = 'alexis';// alex_tweaks_get_real_name($account);
+    //$extra_info = alex_tweaks_get_extra_info($account);
+    $details['mail'] = 'aharper488@outlook.com';
+    $details['phone'] = '0424555555';
+  }
+ 
+ 
+  return $details;
+}

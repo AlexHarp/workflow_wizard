@@ -1,0 +1,8 @@
+workflow_wizard.open_workflow_form:
+  path: '/workflow/{stage}'
+  defaults:
+    _title: 'Workflow Wizard'
+    _controller: '\Drupal\workflow_wizard\Controller\WorkflowWizardController::openModalForm'
+  requirements:
+    _permission: 'view workflow wizard'
+
